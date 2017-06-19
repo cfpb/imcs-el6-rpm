@@ -58,7 +58,7 @@ BuildRoot: %(mktemp -ud %{_tmppath}/build/%{name}-%{version}-%{release}-XXXXXX)
 CFLAGS="-O3 -Wall -Wno-format-security"
 LDFLAGS="-pthread"
 
-make
+make USE_PGXS=1
 
 ###########################################################
 # INSTALL
